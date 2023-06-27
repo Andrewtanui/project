@@ -4,4 +4,4 @@ flask-wtf
 flask-sqlalchemy
 flask-bcrypt
 Flask-Mail
-
+python-dotenv
