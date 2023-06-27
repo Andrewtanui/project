@@ -15,3 +15,26 @@ def home(name):
 def index():
     return render_template('index.html',title='This is the homepage')
 
+@app.route('/student')
+def student():
+    return 'This is the student page'
+
+@app.route('/staff')
+def staff():
+    return 'This is the staff portal'
+
+@app.route('/student/login')
+def student_login():
+    return 'Student Login Page'
+
+@app.route('/student/settings/<int:id>')
+def student_settings(id):
+    return 'This is the student settings page. Id is {id}'
+
+@app.route('/staff/login')
+def admin_login():
+    return 'This is the admin page'
+
+@app.route('/staff/settings/<int:id>')
+def staff_settings(id):
+    return f'This is the staff settings section. Your id is {id}'
